@@ -22,12 +22,15 @@
     <h2 class="text-center mt-3 mb-4">About Us
     </h2>
     <p class="lead">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Tristique senectus et netus et malesuada fames ac turpis egestas. Sit amet luctus venenatis lectus magna fringilla. Aliquam ultrices sagittis orci a. Erat nam at lectus urna duis convallis convallis. Nibh tellus molestie nunc non blandit massa enim nec. Dignissim cras tincidunt lobortis feugiat vivamus at. Lectus mauris ultrices eros in cursus turpis massa. Id ornare arcu odio ut sem nulla pharetra diam sit. Erat velit scelerisque in dictum non consectetur a erat. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Scelerisque in dictum non consectetur a. Eu mi bibendum neque egestas congue quisque. Lectus proin nibh nisl condimentum id venenatis a. Vitae tortor condimentum lacinia quis vel. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Tristique senectus et netus et malesuada fames ac turpis egestas. Sit amet luctus venenatis lectus magna fringilla. Aliquam ultrices sagittis orci a. Erat nam at lectus urna duis convallis convallis. Nibh tellus molestie nunc non blandit massa enim nec. 
 
     </p>
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-    <p class="text-center">TODO - Show the job details here
-    </p>
+    <div>
+      {% for job in jobs %}
+      {% include 'jobitem.html' %}
+      {% endfor %}
+    </div>
     <div class = "text-center">
     <button class = "btn btn-primary btn-lg mt-3">Contact Us</button>
       <p class = "mt-4">Copyright 2023, PS</p>
